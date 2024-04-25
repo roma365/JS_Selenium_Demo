@@ -1,0 +1,3 @@
+class BasicAuthPage extends BasePage {
+    
+}
