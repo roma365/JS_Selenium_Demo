@@ -8,12 +8,12 @@ class BasePage{
     }
     go_to_url(thisURL){  
         driver.get(thisURL);
-    } 
-    tearDown(){ 
-       
-        setTimeout(()=>{
-            driver.quit();
-        }, 3000);       
+    }
+    async tearDown(){
+
+        setTimeout(async () => {
+            await driver.quit();
+        }, 3000);
     }  
 
 }
