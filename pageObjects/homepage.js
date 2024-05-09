@@ -30,5 +30,17 @@ class HomePage extends BasePage{
         await driver.findElement(By.xpath("//a[@href=\"/challenging_dom\"]")).click();
         return challengingDomPage;
     }
+    async contextMenu_Page() {
+        await driver.findElement(By.xpath("//a[@href=\"/context_menu\"]")).click();
+        return contextMenuPage;
+    }
+    async exitIntent_Page() {
+        await driver.findElement(By.xpath("//a[@href=\"/exit_intent\"]")).click();
+        return exitIntentPage;
+    }
+    async geolocation_Page() {
+        await driver.findElement(By.xpath("//a[@href=\"/geolocation\"]")).click();
+        return geolocationPage;
+    }
 }
 module.exports = new HomePage();
